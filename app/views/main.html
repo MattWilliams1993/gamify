@@ -1,22 +1,19 @@
-<div class="jumbotron">
-  <h1>Enter Your Summoner Name Below</h1>
-  <p class="lead">
-    <input type="text" ng-model="textBox">
-  </p>
-  <p><a class="btn btn-lg btn-success" ng-click="getData()">Get Data!<span class="glyphicon glyphicon-ok"></span></a></p>
+<div class="container">
+
+  <div class="jumbotron">
+  
+    <h1>Social Network For Developers</h1>
+    <p>Let other people help you code as you share your projects</p>
+  </div>
+
+
 </div>
 
-<div class="row marketing">
-  <p ng-hide="isFound">{{loldata}}</p>
+<!-- ugly hack to init material for bootstrap -->
+<script>
+    $(document).ready(function() {
+        $.material.init();
+    });
+</script>
 
 
-<p ng-show="isFound" ng-model="loldata" ng-repeat="lolgametype in lol">
-  <b>Gametype: {{lolgametype.playerStatSummaryType}}</b></br>
-  Champion Kills: {{lolgametype.aggregatedStats.totalChampionKills}} </br>
-  Total Assist: {{lolgametype.aggregatedStats.totalAssists}}</br>
-
-</p>
-
-<div>
-
-</div>

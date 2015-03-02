@@ -47,4 +47,16 @@ angular.module('testfolderApp')
 	}
 
 
+  }]).controller('LoginCtrl', ['$scope', '$http', function($scope, $http) {
+
+
+
+
+
+  }]).controller('SignupCtrl', ['$scope', '$http', function($scope, $http) {
+
+
+
+
+
   }]);
